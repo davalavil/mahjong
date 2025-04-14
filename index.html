@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahjong Solitaire 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info">
+        Haz clic en pares de fichas idénticas y libres para eliminarlas.<br>
+        Ficha seleccionada: <span id="selected-info">Ninguna</span><br>
+        Fichas restantes: <span id="remaining-info">144</span>
+    </div>
+    <div id="game-container"></div>
+
+    <!-- Incluir Three.js (CDN) -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <!-- Nuestro script del juego -->
+    <script type="module" src="mahjong.js"></script>
+</body>
+</html>

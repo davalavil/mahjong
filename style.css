@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Evitar barras de scroll */
+    font-family: sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+#game-container {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: #eee;
+    z-index: 100; /* Asegura que esté sobre el canvas */
+}
+
+#selected-info, #remaining-info {
+    font-weight: bold;
+}
