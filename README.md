@@ -1,0 +1,2 @@
+# mahjong
+Juego del mahjong
